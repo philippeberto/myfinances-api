@@ -12,7 +12,7 @@ module.exports = {
       next()
     } else {
       let path = req.path
-      var allowed = ['/login', '/signup', '/success', '/lostpass', '/resendVerification']
+      var allowed = ['/', '/login', '/signup', '/success', '/lostpass', '/resendVerification']
       if ((allowed.indexOf(path) > -1)) {
         console.log('allowed path')
         next()
