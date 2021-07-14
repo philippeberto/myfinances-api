@@ -6,6 +6,7 @@ const cors = require('cors')
 
 const IndexRouter = require('./routes/index')
 const ExpenseRouter = require('./routes/expenses')
+const UserRouter = require('./routes/users')
 
 const app = express()
 
@@ -23,6 +24,7 @@ app.set('view engine', 'ejs')
 
 app.use('/', IndexRouter)
 app.use('/expenses', ExpenseRouter)
+app.use('/users', UserRouter)
 
 app.listen(process.env.PORT, () => {
   console.log(`Running on ${process.env.PORT}...`)

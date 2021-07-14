@@ -1,7 +1,8 @@
 <div>
-  <form action="/create" method="POST">
-    <input type="text" name="name">
+  <form action="/expenses/create" method="POST">
+    <input type="hidden" value=<%=id%> name="id">
     <input type="text" name="description">
+    <input type="number" name="price">
     <button type="submit">Enviar</button>
   </form>
 </div>
