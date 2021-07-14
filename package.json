@@ -23,12 +23,11 @@
   },
   "homepage": "https://github.com/philippeberto/myfinances-api#readme",
   "dependencies": {
+    "@prisma/client": "^2.27.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "express-session": "^1.17.2",
-    "mongodb": "^3.6.9",
-    "parse": "^1.11.1",
-    "parse-server": "^4.5.0"
+    "path": "^0.12.7"
   }
 }
